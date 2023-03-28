@@ -1,0 +1,23 @@
+.VideoCard {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+    .VideoCard img {
+        width: 200px;
+        height: 112px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+.video-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.video-info p {
+    font-size: 0.875rem;
+    color: #777;
+}

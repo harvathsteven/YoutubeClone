@@ -1,0 +1,13 @@
+.HomePage {
+    padding: 1rem;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.video-item {
+    width: 240px;
+}

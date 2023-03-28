@@ -1,0 +1,13 @@
+.ProfilePage {
+    padding: 1rem;
+}
+
+.uploaded-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.uploaded-video-item {
+    width: 240px;
+}

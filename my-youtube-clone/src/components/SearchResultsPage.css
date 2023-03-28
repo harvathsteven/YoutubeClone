@@ -1,0 +1,13 @@
+.SearchResultsPage {
+    padding: 1rem;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.search-result-item {
+    width: 240px;
+}

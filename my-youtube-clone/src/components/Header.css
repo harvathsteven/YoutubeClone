@@ -1,0 +1,62 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 0.25rem 1rem; /* Adjusted padding */
+    color: white;
+    box-sizing: border-box; /* Added box-sizing to include padding and border in the element's total width and height */
+}
+
+    .Header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    .Header .search-form {
+        display: flex;
+        align-items: center;
+    }
+
+        .Header .search-form input[type='text'] {
+            padding: 0.25rem 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #444;
+            background-color: #333;
+            color: white;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .Header .search-form button[type='submit'] {
+            padding: 0.25rem 0.5rem;
+            font-size: 1rem;
+            border: none;
+            background-color: #444;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            transition: background-color 0.3s;
+        }
+
+            .Header .search-form button[type='submit']:hover {
+                background-color: #555;
+            }
+
+    .Header .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+        .Header .navigation a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+            .Header .navigation a:hover {
+                color: #ccc;
+            }
