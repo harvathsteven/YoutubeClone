@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfilePage.css';
+import './ProfilePage.module.css';
 
 function ProfilePage() {
     const userInfo = {

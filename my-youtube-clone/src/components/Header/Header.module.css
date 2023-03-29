@@ -1,0 +1,77 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f00;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+    .Logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+
+.Search {
+    display: flex;
+    width:fit-content;
+    align-items: center;
+    margin-left: 1rem;
+    flex-direction: row
+}
+
+    .Search input {
+        flex: 1;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 2px 0 0 2px;
+        font-size: 1rem;
+    }
+
+    .Search input, textarea {
+        margin-top: 0.0rem;
+    }
+
+    .Search button {
+        padding: 0.5rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0 2px 2px 0;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        .Search button:hover {
+            background-color: #444;
+        }
+
+.NavLinks {
+    display: flex;
+    align-items: center;
+}
+
+.NavLink {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+    .NavLink:hover {
+        color: #ccc;
+    }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Header.css';
+import styles from './Header.module.css';
 
 function Header() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -14,11 +14,11 @@ function Header() {
     };
 
     return (
-        <header className="Header">
-            <Link to="/" className="logo">
+        <header className={styles.Header}>
+            <Link to="/" className={styles.Logo}>
                 My YouTube Clone
             </Link>
-            <form onSubmit={handleSearch} className="search-form">
+            <form onSubmit={handleSearch} className={styles.Search}>
                 <input
                     type="text"
                     placeholder="Search"
@@ -27,9 +27,9 @@ function Header() {
                 />
                 <button type="submit">Search</button>
             </form>
-            <nav className="navigation">
-                <Link to="/upload">Upload</Link>
-                <Link to="/profile">Profile</Link>
+            <nav className={styles.NavLinks}>
+                <Link to="/upload" className={styles.NavLink}>Upload</Link>
+                <Link to="/profile" className={styles.NavLink}>Profile</Link>
             </nav>
         </header>
     );

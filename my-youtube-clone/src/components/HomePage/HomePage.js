@@ -1,6 +1,6 @@
 import React from 'react';
-import VideoCard from './VideoCard/VideoCard'
-import './HomePage.css';
+import VideoCard from '../VideoCard/VideoCard';
+import styles from './HomePage.module.css';
 
 function HomePage() {
     const videos = [
@@ -24,13 +24,12 @@ function HomePage() {
     ];
 
     return (
-        <div className="HomePage">
+        <div className={styles.HomePage}>
             {videos.map((video) => (
                 <VideoCard key={video.id} {...video} />
             ))}
         </div>
-    )
+    );
 }
 
 export default HomePage;
-

@@ -1,6 +1,6 @@
 import React from 'react';
-import VideoCard from './VideoCard/VideoCard';
-import './SearchResultsPage.css';
+import VideoCard from '../VideoCard/VideoCard';
+import './SearchResultsPage.module.css';
 
 function SearchResultsPage() {
     const videos = [
