@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoCard from '../VideoCard/VideoCard';
-import './SearchResultsPage.module.css';
+import styles from './SearchResultsPage.module.css';
 
 function SearchResultsPage() {
     const videos = [
@@ -24,7 +24,7 @@ function SearchResultsPage() {
     ];
 
     return (
-        <div className="SearchResultsPage">
+        <div className={styles.SearchResultsPage}>
             {videos.map((video) => (
                 <VideoCard key={video.id} {...video} />
             ))}
@@ -33,4 +33,3 @@ function SearchResultsPage() {
 }
 
 export default SearchResultsPage;
-

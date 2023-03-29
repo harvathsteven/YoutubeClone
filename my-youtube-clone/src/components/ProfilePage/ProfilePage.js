@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfilePage.module.css';
+import styles from './ProfilePage.module.css';
 
 function ProfilePage() {
     const userInfo = {
@@ -15,17 +15,17 @@ function ProfilePage() {
     ];
 
     return (
-        <div className="ProfilePage">
+        <div className={styles.ProfilePage}>
             <h2>Profile</h2>
-            <div className="user-info">
+            <div className={styles['user-info']}>
                 <h3>Name: {userInfo.name}</h3>
                 <p>Email: {userInfo.email}</p>
                 <p>Joined: {userInfo.joined}</p>
             </div>
             <h2>Uploaded Videos</h2>
-            <div className="uploaded-videos">
+            <div className={styles['uploaded-videos']}>
                 {uploadedVideos.map(video => (
-                    <div key={video.id} className="uploaded-video-item">
+                    <div key={video.id} className={styles['uploaded-video-item']}>
                         <img src={video.thumbnail} alt={video.title} />
                         <h3>{video.title}</h3>
                     </div>
@@ -36,4 +36,3 @@ function ProfilePage() {
 }
 
 export default ProfilePage;
-
