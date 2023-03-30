@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './VideoCard.module.css';
+import styles from './VideoCard.module.css';
 
 function VideoCard({ thumbnail, title, channel, views, date }) {
     const navigate = useNavigate();
@@ -11,9 +11,9 @@ function VideoCard({ thumbnail, title, channel, views, date }) {
     };
 
     return (
-        <div className="VideoCard" onClick={handleClick}>
+        <div className={styles.VideoCard} onClick={handleClick}>
             <img src={thumbnail} alt={title} />
-            <div className="video-info">
+            <div className={styles.videoInfo}>
                 <h4>{title}</h4>
                 <p>{channel}</p>
                 <p>
