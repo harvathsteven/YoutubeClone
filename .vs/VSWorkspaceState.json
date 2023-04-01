@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\my-youtube-clone",
-    "\\my-youtube-clone\\src",
-    "\\my-youtube-clone\\src\\components",
-    "\\my-youtube-clone\\src\\components\\Header",
-    "\\my-youtube-clone\\src\\components\\HomePage",
-    "\\my-youtube-clone\\src\\components\\ProfilePage",
-    "\\my-youtube-clone\\src\\components\\SearchResultsPage",
-    "\\my-youtube-clone\\src\\components\\VideoPage",
-    "\\my-youtube-clone\\src\\components\\VideoPlayer"
+    ""
   ],
-  "SelectedNode": "\\my-youtube-clone-backend",
+  "SelectedNode": "\\my-youtube-clone-backend.sln",
   "PreviewInSolutionExplorer": false
 }
